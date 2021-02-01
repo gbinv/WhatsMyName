@@ -171,7 +171,7 @@ if (args.inputfile):
 else:
     inputfile = 'web_accounts_list.json'
     
-with open(inputfile) as data_file:
+with open(inputfile, encoding='utf8') as data_file:
     data = json.load(data_file)
 
 if args.site:
